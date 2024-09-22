@@ -1,0 +1,15 @@
+.home-container {
+  background-image: url("/src/assets/homepage.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 95vh; /* Full viewport height */
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif; /* or any font of your choice */
+  font-size: 5rem !important;
+  color: #faf7f0 !important; /* Your preferred color */
+}
+img {
+  border-radius: 2rem;
+}
