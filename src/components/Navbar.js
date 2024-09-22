@@ -7,8 +7,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
+      <nav className="navbar  navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid m-2">
           <Link className="navbar-brand" to="/">
             Bro's Gym
           </Link>

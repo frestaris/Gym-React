@@ -5,11 +5,17 @@
   height: 95vh; /* Full viewport height */
 }
 
-h1 {
+.carousel-container {
+  padding: 0 2rem; /* Adjust the padding as needed */
+}
+
+.typewriter {
   font-family: "Montserrat", sans-serif; /* or any font of your choice */
   font-size: 5rem !important;
   color: #faf7f0 !important; /* Your preferred color */
 }
-img {
-  border-radius: 2rem;
+.bi:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
