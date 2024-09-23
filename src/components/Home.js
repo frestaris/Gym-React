@@ -111,7 +111,7 @@ const Home = () => {
       <div className="container ">
         <h1 className="py-4 fs-1 text-decoration-underline fw-bold">Classes</h1>
         <div className="row">
-          <div className="col-md-4 mb-4">
+          <div className="col-md-8 mb-4 d-flex">
             <div className="card">
               <img src={pic1} className="card-img-top" alt="CrossFit Class" />
               <div className="card-body">
@@ -126,23 +126,31 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
-            <div className="card">
+          <div className="col-md-4 mb-4 d-flex">
+            <div className="card ">
               <img src={pic1} className="card-img-top" alt="HIIT Class" />
-              <div className="card-body">
+              <div className="card-body ">
                 <h5 className="card-title">HIIT</h5>
                 <p className="card-text">
                   A fast-paced, high-intensity interval training session
-                  designed for quick results.
+                  designed for quick results. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Adipisci voluptas nobis,
+                  necessitatibus reiciendis corporis facere perspiciatis eos
+                  atque illum eum odio quam, repudiandae quos blanditiis quae
+                  ipsum eaque. Ullam, similique! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ducimus temporibus, doloremque
+                  hic illo tenetur consequuntur non sint omnis tempora nam
+                  voluptatibus facilis enim, rem officiis vero similique
+                  molestias error vel.
                 </p>
-                <a href="/free-trial" className="btn btn-dark">
+                <a href="/free-trial" className="btn btn-dark ">
                   Join Now
                 </a>
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-4">
-            <div className="card">
+          <div className="col-md-4 mb-4 d-flex">
+            <div className="card ">
               <img src={pic1} className="card-img-top" alt="Yoga Class" />
               <div className="card-body">
                 <h5 className="card-title">Powerlifting</h5>
@@ -156,11 +164,55 @@ const Home = () => {
               </div>
             </div>
           </div>
+          <div className="col-md-8 mb-4 d-flex">
+            <div className="card">
+              <img src={pic1} className="card-img-top" alt="Spin Class" />
+              <div className="card-body">
+                <h5 className="card-title">Spin Class</h5>
+                <p className="card-text">
+                  A high-energy indoor cycling workout that improves
+                  cardiovascular fitness.
+                </p>
+                <a href="/free-trial" className="btn btn-dark">
+                  Join Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-6 mb-4 d-flex">
+            <div className="card">
+              <img src={pic1} className="card-img-top" alt="Yoga Class" />
+              <div className="card-body">
+                <h5 className="card-title">Yoga</h5>
+                <p className="card-text">
+                  A mind-body practice that promotes flexibility and relaxation.
+                </p>
+                <a href="/free-trial" className="btn btn-dark">
+                  Join Now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 mb-4 d-flex">
+            <div className="card">
+              <img src={pic1} className="card-img-top" alt="Boxing Class" />
+              <div className="card-body">
+                <h5 className="card-title">Boxing</h5>
+                <p className="card-text">
+                  A high-energy workout that combines boxing techniques with
+                  cardio for endurance.
+                </p>
+                <a href="/free-trial" className="btn btn-dark">
+                  Join Now
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
         {/* Socials */}
-        <h1 className="py-4 fs-1 text-decoration-underline fw-bold">
-          Social Media
-        </h1>
+        <h1 className="py-4 fs-1 text-decoration-underline fw-bold">Socials</h1>
         <div className="d-flex justify-content-center pb-4">
           <a
             href="https://www.facebook.com"
