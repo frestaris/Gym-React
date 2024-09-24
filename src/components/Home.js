@@ -1,7 +1,18 @@
 import React from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
-import pic1 from "../assets/crossfit-534615_1920.jpg";
+import crossfit from "../assets/crossfit.jpg";
+import hiit from "../assets/hiit.jpg";
+import powerlifting from "../assets/powerlifting.jpg";
+import spinClass from "../assets/spin class.jpg";
+import yoga from "../assets/yoga.jpg";
+import boxing from "../assets/boxing.jpg";
+import carouselPic1 from "../assets/carousel1.jpg";
+import carouselPic2 from "../assets/carousel2.jpg";
+import carouselPic3 from "../assets/carousel3.jpg";
+import carouselPic5 from "../assets/carousel5.jpg";
+import carouselPic6 from "../assets/carousel6.jpg";
+import carouselPic4 from "../assets/carousel4.jpg";
 
 const Home = () => {
   return (
@@ -67,16 +78,68 @@ const Home = () => {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="5"
+              aria-label="Slide 1"
+            ></button>
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={pic1} className="d-block w-100" alt="First slide" />
+              <img
+                src={carouselPic1}
+                className="d-block w-100"
+                alt="First slide"
+              />
             </div>
             <div className="carousel-item">
-              <img src={pic1} className="d-block w-100" alt="Second slide" />
+              <img
+                src={carouselPic2}
+                className="d-block w-100"
+                alt="Second slide"
+              />
             </div>
             <div className="carousel-item">
-              <img src={pic1} className="d-block w-100" alt="Third slide" />
+              <img
+                src={carouselPic3}
+                className="d-block w-100"
+                alt="Third slide"
+              />
+            </div>
+
+            <div className="carousel-item">
+              <img
+                src={carouselPic5}
+                className="d-block w-100"
+                alt="Fourth slide"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={carouselPic6}
+                className="d-block w-100"
+                alt="Fifth slide"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src={carouselPic4}
+                className="d-block w-100"
+                alt="Sixth slide"
+              />
             </div>
           </div>
           <button
@@ -111,101 +174,113 @@ const Home = () => {
       <div className="container ">
         <h1 className="py-4 fs-1 text-decoration-underline fw-bold">Classes</h1>
         <div className="row">
-          <div className="col-md-8 mb-4 d-flex">
-            <div className="card">
-              <img src={pic1} className="card-img-top" alt="CrossFit Class" />
-              <div className="card-body">
-                <h5 className="card-title">CrossFit</h5>
-                <p className="card-text">
-                  A high-intensity workout combining cardio, strength, and
-                  agility for total fitness.
-                </p>
-                <a href="/free-trial" className="btn btn-dark">
-                  Join Now
-                </a>
+          <div className="col-md-7 mb-4 d-flex">
+            <div
+              className="card hover-card"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <img src={hiit} className="card-img-top" alt="CrossFit Class" />
+              <div className="card-body-overlay">
+                <div className="text-content">
+                  <h5 className="card-title">HIIT</h5>
+                  <p className="card-text">
+                    A fast-paced, high-intensity interval training session
+                    designed for quick results.
+                  </p>
+                  <a href="/free-trial" className="btn btn-dark">
+                    Join Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-5 mb-4 d-flex">
+            <div className="card hover-card right">
+              <img src={crossfit} className="card-img-top" alt="HIIT Class" />
+              <div className="card-body-overlay">
+                <div className="text-content">
+                  <h5 className="card-title">CROSSFIT</h5>
+                  <p className="card-text">
+                    A high-intensity workout combining cardio, strength, and
+                    agility for total fitness.
+                  </p>
+                  <a href="/free-trial" className="btn btn-dark ">
+                    Join Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-md-4 mb-4 d-flex">
-            <div className="card ">
-              <img src={pic1} className="card-img-top" alt="HIIT Class" />
-              <div className="card-body ">
-                <h5 className="card-title">HIIT</h5>
-                <p className="card-text">
-                  A fast-paced, high-intensity interval training session
-                  designed for quick results. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Adipisci voluptas nobis,
-                  necessitatibus reiciendis corporis facere perspiciatis eos
-                  atque illum eum odio quam, repudiandae quos blanditiis quae
-                  ipsum eaque. Ullam, similique! Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Ducimus temporibus, doloremque
-                  hic illo tenetur consequuntur non sint omnis tempora nam
-                  voluptatibus facilis enim, rem officiis vero similique
-                  molestias error vel.
-                </p>
-                <a href="/free-trial" className="btn btn-dark ">
-                  Join Now
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-4 d-flex">
-            <div className="card ">
-              <img src={pic1} className="card-img-top" alt="Yoga Class" />
-              <div className="card-body">
-                <h5 className="card-title">Powerlifting</h5>
-                <p className="card-text">
-                  Focus on strength training techniques for the squat, bench
-                  press, and deadlift.
-                </p>
-                <a href="/free-trial" className="btn btn-dark">
-                  Join Now
-                </a>
+            <div className="card hover-card">
+              <img src={spinClass} className="card-img-top" alt="Yoga Class" />
+              <div className="card-body-overlay">
+                <div className="text-content">
+                  <h5 className="card-title">SPIN CLASS</h5>
+                  <p className="card-text">
+                    A high-energy indoor cycling workout that improves
+                    cardiovascular fitness.
+                  </p>
+                  <a href="/free-trial" className="btn btn-dark">
+                    Join Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-md-8 mb-4 d-flex">
-            <div className="card">
-              <img src={pic1} className="card-img-top" alt="Spin Class" />
-              <div className="card-body">
-                <h5 className="card-title">Spin Class</h5>
-                <p className="card-text">
-                  A high-energy indoor cycling workout that improves
-                  cardiovascular fitness.
-                </p>
-                <a href="/free-trial" className="btn btn-dark">
-                  Join Now
-                </a>
+            <div className="card hover-card">
+              <img
+                src={powerlifting}
+                className="card-img-top"
+                alt="Spin Class"
+              />
+              <div className="card-body-overlay">
+                <div className="text-content">
+                  <h5 className="card-title">POWERLIFTING</h5>
+                  <p className="card-text">
+                    Focus on strength training techniques for the squat, bench
+                    press, and deadlift.
+                  </p>
+                  <a href="/free-trial" className="btn btn-dark">
+                    Join Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="col-md-6 mb-4 d-flex">
-            <div className="card">
-              <img src={pic1} className="card-img-top" alt="Yoga Class" />
-              <div className="card-body">
-                <h5 className="card-title">Yoga</h5>
-                <p className="card-text">
-                  A mind-body practice that promotes flexibility and relaxation.
-                </p>
-                <a href="/free-trial" className="btn btn-dark">
-                  Join Now
-                </a>
+            <div className="card hover-card">
+              <img src={yoga} className="card-img-top" alt="Yoga Class" />
+              <div className="card-body-overlay">
+                <div className="text-content">
+                  <h5 className="card-title">YOGA</h5>
+                  <p className="card-text">
+                    A mind-body practice that promotes flexibility and
+                    relaxation.
+                  </p>
+                  <a href="/free-trial" className="btn btn-dark">
+                    Join Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="col-md-6 mb-4 d-flex">
-            <div className="card">
-              <img src={pic1} className="card-img-top" alt="Boxing Class" />
-              <div className="card-body">
-                <h5 className="card-title">Boxing</h5>
-                <p className="card-text">
-                  A high-energy workout that combines boxing techniques with
-                  cardio for endurance.
-                </p>
-                <a href="/free-trial" className="btn btn-dark">
-                  Join Now
-                </a>
+            <div className="card hover-card">
+              <img src={boxing} className="card-img-top" alt="Boxing Class" />
+              <div className="card-body-overlay">
+                <div className="text-content">
+                  <h5 className="card-title">BOXING</h5>
+                  <p className="card-text">
+                    A high-energy workout that combines boxing techniques with
+                    cardio for endurance.
+                  </p>
+                  <a href="/free-trial" className="btn btn-dark">
+                    Join Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>

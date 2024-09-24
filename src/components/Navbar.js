@@ -45,6 +45,7 @@ const Navbar = () => {
                   MEMBERSHIPS & PRICING
                 </Link>
               </li>
+              <li className="nav-item nav-link">CLASSES</li>
               <li className="nav-item">
                 <Link
                   to="/free-trial"
