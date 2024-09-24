@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -10,6 +11,11 @@ const Navbar = () => {
       <nav className="navbar  navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid m-2">
           <Link className="navbar-brand" to="/">
+            <img
+              src={logo}
+              alt="Bro's Gym Logo"
+              style={{ height: "40px", marginRight: "8px" }}
+            />
             Bro's Gym
           </Link>
           <button
@@ -45,7 +51,6 @@ const Navbar = () => {
                   MEMBERSHIPS & PRICING
                 </Link>
               </li>
-              <li className="nav-item nav-link">CLASSES</li>
               <li className="nav-item">
                 <Link
                   to="/free-trial"

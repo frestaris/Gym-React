@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import crossfit from "../assets/crossfit.jpg";
@@ -15,6 +15,24 @@ import carouselPic6 from "../assets/carousel6.jpg";
 import carouselPic4 from "../assets/carousel4.jpg";
 
 const Home = () => {
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTopButton(true);
+      } else {
+        setShowScrollTopButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="text-center">
       <div className="home-container d-flex justify-content-center align-items-center">
@@ -346,6 +364,38 @@ const Home = () => {
         <hr />
         <p>Copyright © Bro's Gym</p>
       </div>
+      {showScrollTopButton && (
+        <button
+          className="scroll-top-button"
+          onClick={scrollToTop}
+          style={{
+            position: "fixed",
+            bottom: "10px",
+            right: "10px",
+            background: "transparent",
+            color: "#fff",
+            border: "none",
+            borderRadius: "50%",
+            padding: "10px 15px",
+            cursor: "pointer",
+            zIndex: "1000",
+          }}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="dark"
+            className="bi bi-arrow-up-circle"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+            />
+          </svg>
+        </button>
+      )}
     </div>
   );
 };
