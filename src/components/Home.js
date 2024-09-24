@@ -119,6 +119,7 @@ const Home = () => {
             <div className="carousel-item active">
               <img
                 src={carouselPic1}
+                loading="lazy"
                 className="d-block w-100"
                 alt="First slide"
               />
@@ -126,6 +127,7 @@ const Home = () => {
             <div className="carousel-item">
               <img
                 src={carouselPic2}
+                loading="lazy"
                 className="d-block w-100"
                 alt="Second slide"
               />
@@ -133,6 +135,7 @@ const Home = () => {
             <div className="carousel-item">
               <img
                 src={carouselPic3}
+                loading="lazy"
                 className="d-block w-100"
                 alt="Third slide"
               />
@@ -141,6 +144,7 @@ const Home = () => {
             <div className="carousel-item">
               <img
                 src={carouselPic5}
+                loading="lazy"
                 className="d-block w-100"
                 alt="Fourth slide"
               />
@@ -148,6 +152,7 @@ const Home = () => {
             <div className="carousel-item">
               <img
                 src={carouselPic6}
+                loading="lazy"
                 className="d-block w-100"
                 alt="Fifth slide"
               />
@@ -155,6 +160,7 @@ const Home = () => {
             <div className="carousel-item">
               <img
                 src={carouselPic4}
+                loading="lazy"
                 className="d-block w-100"
                 alt="Sixth slide"
               />
@@ -197,7 +203,12 @@ const Home = () => {
               className="card hover-card"
               style={{ position: "relative", overflow: "hidden" }}
             >
-              <img src={hiit} className="card-img-top" alt="CrossFit Class" />
+              <img
+                src={hiit}
+                loading="lazy"
+                className="card-img-top"
+                alt="CrossFit Class"
+              />
               <div className="card-body-overlay">
                 <div className="text-content">
                   <h5 className="card-title">HIIT</h5>
@@ -214,7 +225,12 @@ const Home = () => {
           </div>
           <div className="col-md-5 mb-4 d-flex">
             <div className="card hover-card right">
-              <img src={crossfit} className="card-img-top" alt="HIIT Class" />
+              <img
+                src={crossfit}
+                loading="lazy"
+                className="card-img-top"
+                alt="HIIT Class"
+              />
               <div className="card-body-overlay">
                 <div className="text-content">
                   <h5 className="card-title">CROSSFIT</h5>
@@ -231,7 +247,12 @@ const Home = () => {
           </div>
           <div className="col-md-4 mb-4 d-flex">
             <div className="card hover-card">
-              <img src={spinClass} className="card-img-top" alt="Yoga Class" />
+              <img
+                src={spinClass}
+                loading="lazy"
+                className="card-img-top"
+                alt="Yoga Class"
+              />
               <div className="card-body-overlay">
                 <div className="text-content">
                   <h5 className="card-title">SPIN CLASS</h5>
@@ -250,6 +271,7 @@ const Home = () => {
             <div className="card hover-card">
               <img
                 src={powerlifting}
+                loading="lazy"
                 className="card-img-top"
                 alt="Spin Class"
               />
@@ -270,7 +292,12 @@ const Home = () => {
 
           <div className="col-md-6 mb-4 d-flex">
             <div className="card hover-card">
-              <img src={yoga} className="card-img-top" alt="Yoga Class" />
+              <img
+                src={yoga}
+                loading="lazy"
+                className="card-img-top"
+                alt="Yoga Class"
+              />
               <div className="card-body-overlay">
                 <div className="text-content">
                   <h5 className="card-title">YOGA</h5>
@@ -287,7 +314,12 @@ const Home = () => {
           </div>
           <div className="col-md-6 mb-4 d-flex">
             <div className="card hover-card">
-              <img src={boxing} className="card-img-top" alt="Boxing Class" />
+              <img
+                src={boxing}
+                loading="lazy"
+                className="card-img-top"
+                alt="Boxing Class"
+              />
               <div className="card-body-overlay">
                 <div className="text-content">
                   <h5 className="card-title">BOXING</h5>
