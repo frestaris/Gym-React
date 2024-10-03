@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import crossfit from "../assets/crossfit.jpg";
@@ -216,9 +217,9 @@ const Home = () => {
                     A fast-paced, high-intensity interval training session
                     designed for quick results.
                   </p>
-                  <a href="/free-trial" className="btn btn-dark">
+                  <Link to="/free-trial" className="btn btn-dark">
                     Join Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -238,9 +239,9 @@ const Home = () => {
                     A high-intensity workout combining cardio, strength, and
                     agility for total fitness.
                   </p>
-                  <a href="/free-trial" className="btn btn-dark ">
+                  <Link to="/free-trial" className="btn btn-dark">
                     Join Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -260,9 +261,9 @@ const Home = () => {
                     A high-energy indoor cycling workout that improves
                     cardiovascular fitness.
                   </p>
-                  <a href="/free-trial" className="btn btn-dark">
+                  <Link to="/free-trial" className="btn btn-dark">
                     Join Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -282,9 +283,9 @@ const Home = () => {
                     Focus on strength training techniques for the squat, bench
                     press, and deadlift.
                   </p>
-                  <a href="/free-trial" className="btn btn-dark">
+                  <Link to="/free-trial" className="btn btn-dark">
                     Join Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -305,9 +306,9 @@ const Home = () => {
                     A mind-body practice that promotes flexibility and
                     relaxation.
                   </p>
-                  <a href="/free-trial" className="btn btn-dark">
+                  <Link to="/free-trial" className="btn btn-dark">
                     Join Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -327,9 +328,9 @@ const Home = () => {
                     A high-energy workout that combines boxing techniques with
                     cardio for endurance.
                   </p>
-                  <a href="/free-trial" className="btn btn-dark">
+                  <Link to="/free-trial" className="btn btn-dark">
                     Join Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

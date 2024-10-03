@@ -1,5 +1,6 @@
 import React from "react";
 import { Table, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Timetable = () => {
   return (
@@ -122,9 +123,9 @@ const Timetable = () => {
         </Col>
       </Row>
       <div className="text-center mt-4">
-        <a href="/free-trial" className="btn btn-dark btn-lg mb-5 px-5">
+        <Link to="/free-trial" className="btn btn-dark btn-lg mb-5 px-5">
           Join Now
-        </a>
+        </Link>
       </div>
     </div>
   );
