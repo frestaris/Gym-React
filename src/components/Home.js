@@ -395,7 +395,11 @@ const Home = () => {
           </a>
         </div>
         <hr />
-        <p>Copyright © Bro's Gym</p>
+        <div className="mb-3">
+          Copyright ©{" "}
+          <a href="https://arisfresta-portfolio.netlify.app/">Aris Fresta</a>{" "}
+          {new Date().getFullYear()}. All rights reserved.{" "}
+        </div>
       </div>
       {showScrollTopButton && (
         <button
